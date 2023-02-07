@@ -14,15 +14,15 @@ export default function AppRouter() {
     <Router>
       <Layout>
         <Routes>
-          <Route exact path="/" component={HomePages} />
-          <Route exact path="/login" component={LoginPages} />
-          <Route exact path="/register" component={RegisterPage} />
-          <Route exact path="/account" component={AccountPage} />
-          <Route exact path="/projects" component={ProjectsPage} />
-          <Route exact path="/projects/:projectId" component={ProjectPage} />
-          <Route exact path="/admin/users" component={UsersPage} />
+          <Route exact path="/" element={<HomePages />} />
+          <Route exact path="/login" element={<LoginPages />} />
+          <Route exact path="/register" element={<RegisterPage />} />
+          <Route exact path="/account" element={<AccountPage />} />
+          <Route exact path="/projects" element={<ProjectsPage />} />
+          <Route exact path="/projects/:projectId" element={<ProjectPage />} />
+          <Route exact path="/admin/users" element={<UsersPage />} />
 
-          <Route exact path="*" component={NotFoundPage} />
+          <Route exact path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
     </Router>
