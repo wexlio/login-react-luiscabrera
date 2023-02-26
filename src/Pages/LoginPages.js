@@ -37,7 +37,7 @@ export default function LoginPages() {
       });
       const data = await response.json();
       change(data.user);
-      // navigate(routes.home)
+      navigate(routes.home)
     } catch (error) {
       console.log('el error es: ', error)
       e.target.reset()
